@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+# never publish real user feedback or trained models built from it
+data/feedback.csv
+models/feedback_model.joblib
+models/model_report.json

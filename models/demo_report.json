@@ -1,0 +1,59 @@
+{
+  "trained_at": "2026-11-23T03:24:09+00:00",
+  "source": "simulated",
+  "n_rows": 743,
+  "eligible": false,
+  "active": false,
+  "reason": "gradient_boosting does not clearly beat the rule-based baseline (needs gain >= 0.02, gain > fold std, and AUC >= 0.6). Rules stay in charge. Trained on SIMULATED data: for pipeline testing only, never activated.",
+  "n_sessions": 159,
+  "positive_rate": 0.49125168236877526,
+  "models": {
+    "logistic_regression": {
+      "auc_mean": 0.6275887719424738,
+      "auc_std": 0.03427022399510535
+    },
+    "gradient_boosting": {
+      "auc_mean": 0.6698624926047319,
+      "auc_std": 0.025580379558647257
+    }
+  },
+  "best": "gradient_boosting",
+  "baseline_auc": 0.6999869793896419,
+  "train_accuracy": 0.702557200538358,
+  "top_features": [
+    {
+      "feature": "rule_score",
+      "weight": 0.5896263724355324
+    },
+    {
+      "feature": "intensity_moderate",
+      "weight": 0.04170166934587866
+    },
+    {
+      "feature": "goal_fat_loss",
+      "weight": 0.03629000593631064
+    },
+    {
+      "feature": "intensity_high",
+      "weight": 0.026458967281176103
+    },
+    {
+      "feature": "difficulty_moderate",
+      "weight": 0.026238013983418622
+    },
+    {
+      "feature": "difficulty_low",
+      "weight": 0.025482472218953972
+    },
+    {
+      "feature": "muscle_group_legs",
+      "weight": 0.020981126438115026
+    },
+    {
+      "feature": "goal_strength",
+      "weight": 0.020580392473938006
+    }
+  ],
+  "cv_folds": 5,
+  "auc_gain": -0.030124486784910087
+}
